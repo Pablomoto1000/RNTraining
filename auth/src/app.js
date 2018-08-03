@@ -9,11 +9,12 @@ class App extends Component {
 
   componentWillMount() {
     firebase.initializeApp({
-      apiKey: 'AIzaSyBtxMY4K6uHxv_2e3GD-FWAD2ACX6lPVRE',
-      authDomain: 'authentication-70a18.firebaseapp.com',
-      databaseURL: 'https://authentication-70a18.firebaseio.com',
-      storageBucket: 'authentication-70a18.appspot.com',
-      messagingSenderId: '682333809338'
+      apiKey: 'AIzaSyD9YcH-wSASfsfU0EtN3jaBx_AIs7DHP-c',
+      authDomain: 'authentication-8000a.firebaseapp.com',
+      databaseURL: 'https://authentication-8000a.firebaseio.com',
+      projectId: 'authentication-8000a',
+      storageBucket: 'authentication-8000a.appspot.com',
+      messagingSenderId: '732380563030'
     });
 
     firebase.auth().onAuthStateChanged((user) => {
@@ -30,7 +31,7 @@ class App extends Component {
       case true:
         return (
           <Button onPress={() => firebase.auth().signOut()}>
-            Log Out
+          Log Out
           </Button>
         );
       case false:

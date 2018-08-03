@@ -16,7 +16,6 @@ class ListItem extends Component {
 
   renderDescription() {
     const { library, expanded } = this.props;
-
     if (expanded) {
       return (
         <CardSection>
@@ -53,16 +52,11 @@ const styles = {
   titleStyle: {
     fontSize: 18,
     paddingLeft: 15
-  },
-  descriptionStyle: {
-    paddingLeft: 10,
-    paddingRight: 10
   }
 };
 
 const mapStateToProps = (state, ownProps) => {
   const expanded = state.selectedLibraryId === ownProps.library.id;
-
   return { expanded };
 };
 

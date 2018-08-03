@@ -4,16 +4,19 @@ import { createStore, applyMiddleware } from 'redux';
 import firebase from 'firebase';
 import ReduxThunk from 'redux-thunk';
 import reducers from './reducers';
+import LoginForm from './components/LoginForm';
 import Router from './Router';
 
 class App extends Component {
   componentWillMount() {
-    const config = {
-      apiKey: 'AIzaSyBR4FTGiOcTZ5OBNi6thE0KhCDR3PaOtQM',
-      authDomain: 'manager-2328b.firebaseapp.com',
-      databaseURL: 'https://manager-2328b.firebaseio.com',
-      storageBucket: 'manager-2328b.appspot.com',
-      messagingSenderId: '193075244299'
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBEblobZfR4DuBEUKHnsIDKgyTqjRjSz3c",
+      authDomain: "manager-5ce0d.firebaseapp.com",
+      databaseURL: "https://manager-5ce0d.firebaseio.com",
+      projectId: "manager-5ce0d",
+      storageBucket: "manager-5ce0d.appspot.com",
+      messagingSenderId: "205342091118"
     };
 
     firebase.initializeApp(config);

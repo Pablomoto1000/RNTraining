@@ -9,7 +9,7 @@ class LibraryList extends Component {
       rowHasChanged: (r1, r2) => r1 !== r2
     });
 
-    this.dataSource = ds.cloneWithRows(this.props.libraries);
+    this.DataSource = ds.cloneWithRows(this.props.libraries);
   }
 
   renderRow(library) {
@@ -19,7 +19,7 @@ class LibraryList extends Component {
   render() {
     return (
       <ListView
-        dataSource={this.dataSource}
+        dataSource={this.DataSource}
         renderRow={this.renderRow}
       />
     );

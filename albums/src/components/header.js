@@ -13,6 +13,7 @@ const Header = (props) => {
   );
 };
 
+// Styling the component
 const styles = {
   viewStyle: {
     backgroundColor: '#F8F8F8',
@@ -21,7 +22,7 @@ const styles = {
     height: 60,
     paddingTop: 15,
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
+    shadowOffset: { widht: 0, height: 2 },
     shadowOpacity: 0.2,
     elevation: 2,
     position: 'relative'
@@ -30,6 +31,7 @@ const styles = {
     fontSize: 20
   }
 };
+
 
 // Make the component available to other parts of the app
 export default Header;
